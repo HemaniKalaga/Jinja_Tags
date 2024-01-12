@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> Conditions </title>
+    </head>
+    <body>
+        
+        <center>
+            <h1> if condition </h1>
+            
+            {% if a < 100 %}
+                <h1> {{a}} is highest</h1>
+            {% endif %}  
+
+        </center>
+        
+        <center>
+                <h1> if else condition </h1>
+
+                {% if a > b %}
+                    <h1> {{a}} is highest </h1>
+                {% else %}
+                    <h1> {{b}} is highest </h1>
+                {% endif %}
+        </center>
+
+        <center>
+            <h1> nested if condition </h1>
+
+            {% if a > b %}
+                {% if a > c %}
+                    <h1> {{a}} is highest </h1>
+                {% else %} 
+                    <h1>{{b}} is highest </h1>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    <h1>{{b}} is highest </h1>    
+                {% else %}
+                    <h1>{{c}} is highest </h1>
+                {% endif %}
+            {% endif %}
+        </center>
+
+         
+
+    </body>
+</html>
